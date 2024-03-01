@@ -26,8 +26,6 @@ ul{
   font-family: 'Shrikhand', sans-serif;
   font-size: 1.75rem;
 }
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
   .navbar__logo{
     background-color: white;
     filter: drop-shadow(0 2px 4px rgb(0, 0, 0, 15%));
@@ -132,5 +130,3 @@ ul{
 
 
 
-
-}
