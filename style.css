@@ -305,3 +305,49 @@ ul{
   justify-content: center;
   margin-top: 40px;
 }
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more/equal than 768px) */
+@media (min-width: 768px) {
+
+
+}
+
+/* Big devices (desktop, more/equal than 1024px) */
+@media (min-width: 1024px) {
+
+/*************** Index ********************/
+.main__container{
+  padding: 0 180px;
+}
+.heading h1 {
+  font-size: 40px;
+}
+.intro__content{
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+.restaurant__card{
+  width: 45%;
+}
+.foot {
+  flex-direction: row;
+  justify-content: end;
+  gap: 50px;
+}
+.foot__row {
+  flex: none;
+}
+.foot__row:last-child {
+  order: 1; 
+}
+
+}
