@@ -237,16 +237,14 @@ ul{
   height: 275px;
   object-fit: cover;
 }
-.container{
-  background-color: #F6F6F6;
-}
 .menu{
   background-color: #F6F6F6;
-  padding: 40px 15px 0;
+  padding: 40px 15px;
   position: relative;
   top: -50px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  margin-bottom: -50px;
 }
 .menu__title{
   display: flex;
@@ -332,7 +330,13 @@ ul{
 .restaurant__card{
   width: 45%;
 }
-
+/*************** Menu ********************/
+.banner img {
+  height: 383px;
+}
+.menu {
+  padding: 40px 80px;
+}
 }
 
 /* Big devices (desktop, more/equal than 1024px) */
@@ -352,6 +356,9 @@ ul{
 }
 .intro__list {
   width: 40%;
+}
+.restaurant__link img {
+  height: 230px;
 }
 .foot {
   flex-direction: row;
@@ -375,6 +382,24 @@ ul{
 }
 
 /*************** Menu ********************/
-
+.container{
+  background-color: white;
+}
+.menu{
+  max-width: 66rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -50px;
+}
+.menu__title,
+.menu__content{
+  width: 60%;
+}
+.menu__title{
+justify-content: center;
+gap: 20px;
+}
 
 }
