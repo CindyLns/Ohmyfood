@@ -333,6 +333,7 @@ ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 50px;
 }
 .restaurant__card{
@@ -345,6 +346,9 @@ ul{
 }
 .foot__row {
   flex: none;
+}
+.foot__row ul{
+  display: flex;
 }
 .foot__row:last-child {
   order: 1; 
