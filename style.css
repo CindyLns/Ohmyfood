@@ -63,6 +63,10 @@ ul{
 .heading{
   padding: 2.8rem 1.25rem 3.1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .heading h1{
   padding: 0 2.5rem 0.75rem;
@@ -73,18 +77,42 @@ ul{
   color: var(--dark-grey);
   margin-bottom: 2.8rem;
 }
-.btn{
-  padding: 18px 40px;
-  background: linear-gradient(167deg,rgba(255,121,218), rgba(147,86,220));
+.btn {
   border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  background: linear-gradient(167deg, rgba(255, 121, 218), rgba(147, 86, 220));
+  padding: 18px 40px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   color: white;
   filter: drop-shadow(0 4px 10px rgb(0, 0, 0, 25%));
   -webkit-filter: drop-shadow(0 4px 10px rgb(0, 0, 0, 25%));
+}
+.btn:hover {
+  border-radius: 25px;
+}
+.btn:hover::after {
+  border-radius: 25px;
+  opacity: 1;
+}
+.btn::after {
+  border-radius: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(167deg, rgba(255, 139, 223), rgba(159, 109, 220));
+  filter: drop-shadow(0 4px 10px rgb(0, 0, 0, 10%));
+  -webkit-filter: drop-shadow(0 4px 10px rgb(0, 0, 0, 10%));
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .intro{
   background-color: white;
