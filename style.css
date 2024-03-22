@@ -236,8 +236,8 @@ ul{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: transparent;
-    animation: progress-heart 1000ms;
-    -webkit-animation: progress-heart 1000ms;
+    animation: progress-heart 1000ms both;
+    -webkit-animation: progress-heart 1000ms both;
 }
 @keyframes progress-heart{
   0% {
@@ -350,7 +350,43 @@ ul{
   display: flex;
   flex-direction: column;
   gap: 12px;
+  animation: menu-content 1000ms 150ms;
+  -webkit-animation: menu-content 1000ms ease forwards;
+  opacity: 0;
 }
+
+@keyframes menu-content{
+  0% {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    opacity: 0;
+}
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+}
+
+}
+.menu__content:nth-child(1) {
+  animation-delay: 150ms;
+}
+
+.menu__content:nth-child(2) {
+  animation-delay: 500ms;
+}
+
+.menu__content:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+
 .menu__subtitle h2{
   font-weight: 300;
   font-size: 16px;
