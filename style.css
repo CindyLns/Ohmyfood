@@ -229,7 +229,7 @@ ul{
   color: black;
   font-weight: 300;
 }
-.restaurant__content .fa-solid.fa-heart:active{
+.restaurant__content .fa-solid.fa-heart:hover{
     background: linear-gradient(167deg, rgba(255, 121, 218), rgba(147, 86, 220));
     background-clip: text;
     -webkit-background-clip: text;
@@ -329,7 +329,7 @@ ul{
 }
 .menu{
   background-color: #F6F6F6;
-  padding: 40px 15px;
+  padding: 40px 10px;
   position: relative;
   top: -50px;
   border-top-left-radius: 40px;
@@ -374,18 +374,17 @@ ul{
 }
 
 }
-.menu__content:nth-child(1) {
-  animation-delay: 150ms;
-}
-
 .menu__content:nth-child(2) {
-  animation-delay: 500ms;
+  animation-delay: 150ms;
 }
 
 .menu__content:nth-child(3) {
   animation-delay: 300ms;
 }
 
+.menu__content:nth-child(4) {
+  animation-delay: 500ms;
+}
 
 .menu__subtitle h2{
   font-weight: 300;
@@ -408,7 +407,7 @@ ul{
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  padding: 15px 15px 10px;
+  padding: 15px 12px 10px;
 }
 .menu__text{
   display: flex;
@@ -430,6 +429,60 @@ ul{
   font-weight: 700;
   color: #353535;
 }
+.menu__check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  position: absolute;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  right: 0;
+  top: 0;
+  background-color: var(--third-color);
+}
+.menu__check .fa-solid.fa-circle-check{
+  color: white;
+  font-size: 20px;
+}
+.menu__check {
+  transform: scaleX(0);
+  transform-origin: right;
+  opacity: 0;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+}
+.menu__description:hover .menu__text p{
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.menu__description:hover .menu__check {
+  transform: scaleX(1);
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+
+.menu__description:hover .menu__price {
+  transform: translateX(-230%);
+  -webkit-transform: translateX(-230%);
+  -moz-transform: translateX(-230%);
+  -ms-transform: translateX(-230%);
+  -o-transform: translateX(-230%);
+}
+
+.menu__check,
+.menu__price {
+  transition: transform 0.5s ease;
+}
+
 .cta{
   display: flex;
   justify-content: center;
@@ -462,6 +515,9 @@ ul{
 }
 .menu {
   padding: 40px 80px;
+}
+.menu__check{
+  width: 10%;
 }
 }
 
@@ -527,5 +583,4 @@ ul{
 justify-content: center;
 gap: 20px;
 }
-
 }
