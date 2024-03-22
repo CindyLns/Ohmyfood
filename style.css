@@ -218,11 +218,6 @@ ul{
   -webkit-text-fill-color: white;
 -webkit-text-stroke-width: 2px;
 -webkit-text-stroke-color: black;
- 
-  /*background: linear-gradient(167deg, rgba(255, 121, 218), rgba(147, 86, 220));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
 }
 .restaurant__name{
   font-size: 18px;
@@ -234,10 +229,15 @@ ul{
   color: black;
   font-weight: 300;
 }
-.restaurant__content .fa-regular:hover{
-  background: linear-gradient(167deg, rgba(255, 121, 218), rgba(147, 86, 220));
-  animation: progress-heart 1000ms;
-  -webkit-animation: progress-heart 1000ms;
+.restaurant__content .fa-solid.fa-heart:active{
+    background: linear-gradient(167deg, rgba(255, 121, 218), rgba(147, 86, 220));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+    animation: progress-heart 1000ms;
+    -webkit-animation: progress-heart 1000ms;
 }
 @keyframes progress-heart{
   0% {
