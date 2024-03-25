@@ -32,7 +32,7 @@ ul{
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
     visibility: hidden; 
   }
 }
@@ -81,7 +81,7 @@ ul{
   align-items: center;
   z-index: 9999;
   animation: preload 4s forwards;
-  -webkit-animation: preload 4s forwards;
+  -webkit-animation: preload 3s forwards;
 }
 .heart-loader {
   background-color: var(--main-color);
