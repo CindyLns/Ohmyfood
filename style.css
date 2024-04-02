@@ -342,11 +342,6 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.restaurant__content .fa-regular {
-  font-size: 21px;
-  color: black;
-  position: relative;
-}
 .restaurant__content .fa-solid.fa-heart:hover {
   background: linear-gradient(167deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -534,6 +529,7 @@ ul {
 .menu__title i {
   font-size: 21px;
   padding-right: 15px;
+  color: black;
 }
 
 .menu__content {

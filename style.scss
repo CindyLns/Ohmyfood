@@ -329,11 +329,6 @@ body {
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
-	.fa-regular {
-		font-size: 21px;
-		color: black;
-		position: relative;
-	}
 	.fa-solid.fa-heart {
 		&:hover {
 			background: linear-gradient(167deg, $second-color, $main-color);
@@ -501,6 +496,7 @@ body {
     i {
         font-size: 21px;
         padding-right: 15px; 
+        color: black;
     }
 }
 .menu__content {
