@@ -330,6 +330,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	.fa-solid.fa-heart {
+        font-size: 21px;
+        display: inline-block;
+        background: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
 		&:hover {
 			background: linear-gradient(167deg, $second-color, $main-color);
 			background-clip: text;
@@ -342,16 +350,7 @@ body {
 		}
 	}
 }
-.fa-solid.fa-heart {
-	font-size: 21px;
-	display: inline-block;
-	background: transparent;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: white;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
-}
+
 @keyframes progress-heart{
     0% {
         transform: scaleY(0);

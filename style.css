@@ -342,6 +342,16 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.restaurant__content .fa-solid.fa-heart {
+  font-size: 21px;
+  display: inline-block;
+  background: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
 .restaurant__content .fa-solid.fa-heart:hover {
   background: linear-gradient(167deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -351,17 +361,6 @@ ul {
   -webkit-text-stroke-color: transparent;
   animation: progress-heart 1000ms both;
   -webkit-animation: progress-heart 1000ms both;
-}
-
-.fa-solid.fa-heart {
-  font-size: 21px;
-  display: inline-block;
-  background: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
 }
 
 @keyframes progress-heart {
