@@ -56,10 +56,6 @@ ul {
     opacity: 0;
   }
 }
-.wrapper {
-  position: relative;
-}
-
 .preloader {
   position: fixed;
   top: 0;
