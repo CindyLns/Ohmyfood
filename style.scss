@@ -147,11 +147,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
     height: 3rem;
     color: $dark-grey;
     background-color: #EAEAEA;
     @include shadowTwenty;
+    input[type=text] {
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: transparent;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        &:focus{
+            outline: none;
+        }
+    }
 }
 .location > p{
         font-size: 16px;

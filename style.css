@@ -129,11 +129,21 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   height: 3rem;
   color: #353535;
   background-color: #EAEAEA;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.location input[type=text] {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.location input[type=text]:focus {
+  outline: none;
 }
 
 .location > p {
