@@ -601,14 +601,13 @@ ul {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   padding: 15px 12px 10px;
+  overflow: hidden;
 }
-@media (max-width: 768px) {
-  .menu__description:hover .menu__text p {
-    max-width: 225px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+.menu__description:hover .menu__text p {
+  max-width: 225px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__description:hover .menu__check {
   transform: scaleX(1);
@@ -630,6 +629,13 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.menu__text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__course {
