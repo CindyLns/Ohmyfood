@@ -337,46 +337,48 @@ body {
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
-	.fa-solid.fa-heart {
+}
+.restaurant__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:hover {
+        .fa-regular.fa-heart{
+            transform: scale(0);
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            -o-transform: scale(0);
+        }
+        .fa-solid.fa-heart {
+            transform: scale(1);
+        }
+
+    }
+    .fa-heart{
         font-size: 21px;
-        display: inline-block;
-        background: transparent;
+        position: absolute;
+        color: black;
+        transform: scale(1);
+        transition: transform 0.3s ease-in;
+        -webkit-transition: transform 0.3s ease-in;
+        -moz-transition: transform 0.3s ease-in;
+        -ms-transition: transform 0.3s ease-in;
+        -o-transition: transform 0.3s ease-in;
+    }
+	.fa-solid.fa-heart {
+        background: linear-gradient(167deg, $second-color, $main-color);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: white;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
-		&:hover {
-			background: linear-gradient(167deg, $second-color, $main-color);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			-webkit-text-stroke-width: 0;
-			-webkit-text-stroke-color: transparent;
-			animation: progress-heart 1000ms both;
-			-webkit-animation: progress-heart 1000ms both;
-		}
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
 	}
 }
-
-@keyframes progress-heart{
-    0% {
-        transform: scaleY(0);
-        opacity: .1;
-        -webkit-transform: scaleY(0);
-        -moz-transform: scaleY(0);
-        -ms-transform: scaleY(0);
-        -o-transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-        -webkit-transform: scaleY(1);
-        -moz-transform: scaleY(1);
-        -ms-transform: scaleY(1);
-        -o-transform: scaleY(1);
-        opacity: 1;
-    }
-  }
 .restaurant__name {
 	font-size: 18px;
 	color: black;
@@ -498,12 +500,7 @@ body {
     @media (min-width: 1024px) {
         width: 60%;
         justify-content: center;
-        gap: 20px;
-    }
-    i {
-        font-size: 21px;
-        padding-right: 15px; 
-        color: black;
+        gap: 30px;
     }
 }
 .menu__content {
