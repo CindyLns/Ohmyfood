@@ -502,6 +502,9 @@ body {
         justify-content: center;
         gap: 30px;
     }
+    .restaurant__button{
+        cursor: pointer;
+    }
 }
 .menu__content {
 	margin: 30px 0;
@@ -565,32 +568,10 @@ body {
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
-	padding: 15px 12px 10px;
     overflow: hidden;
 	&:hover {
-        .menu__text {
-            p {
-                max-width: 225px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-
-        }
 		.menu__check {
-			transform: scaleX(1);
-			opacity: 1;
-			-webkit-transform: scaleX(1);
-			-moz-transform: scaleX(1);
-			-ms-transform: scaleX(1);
-			-o-transform: scaleX(1);
-		}
-		.menu__price {
-			transform: translateX(-230%);
-			-webkit-transform: translateX(-230%);
-			-moz-transform: translateX(-230%);
-			-ms-transform: translateX(-230%);
-			-o-transform: translateX(-230%);
+			width: 4.5rem;
 		}
 	}
 }
@@ -598,8 +579,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-    width: 100%;
+    width: calc(100% - 25px);
     overflow: hidden;
+    padding: 15px 12px 10px;
     p {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -620,43 +602,22 @@ body {
 	font-size: 15px;
 	font-weight: 700;
 	color: $dark-grey;
-	transition: transform 0.5s ease-in-out;
-	-webkit-transition: transform 0.5s ease-in-out;
-	-moz-transition: transform 0.5s ease-in-out;
-	-ms-transition: transform 0.5s ease-in-out;
-	-o-transition: transform 0.5s ease-in-out;
+    padding: 15px 12px 10px;
 }
 .menu__check {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 10%;
-	position: absolute;
-	height: 100%;
+	width: 0%;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	right: 0;
-	top: 0;
 	background-color: $third-color;
-	transform: scaleX(0);
-	transform-origin: right;
-	opacity: 0;
-	-webkit-transform: scaleX(0);
-	-moz-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	-o-transform: scaleX(0);
-	transition: transform 0.5s ease-in-out;
-	-webkit-transition: transform 0.5s ease-in-out;
-	-moz-transition: transform 0.5s ease-in-out;
-	-ms-transition: transform 0.5s ease-in-out;
-	-o-transition: transform 0.5s ease-in-out;
-	@media(min-width: 768px){
-        width: 8%;
-    }
-    @media (min-width: 1024px) {
-        width: 10%;
-    }
-	.fa-solid.fa-circle-check {
+	transition: width 0.3s ease-in-out;
+	-webkit-transition: width 0.3s ease-in-out;
+	-moz-transition: width 0.3s ease-in-out;
+	-ms-transition: width 0.3s ease-in-out;
+	-o-transition: width 0.3s ease-in-out;
+    .fa-solid.fa-circle-check :{
 		color: white;
 		font-size: 20px;
 	}
